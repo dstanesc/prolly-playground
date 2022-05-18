@@ -1,0 +1,30 @@
+{
+  "name": "prolly-playground",
+  "version": "0.1.0",
+  "type": "module",
+  "description": "IPLD prolly trees playground",
+  "main": "prolly-playground.js",
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "@ipld/car": "^4.1.2",
+    "@ipld/dag-cbor": "^7.0.1",
+    "@ipld/dag-json": "^8.0.1",
+    "multiformats": "^9.6.4",
+    "ipld-schema": "2.0.2",
+    "ipld-schema-validator": "^0.1.0",
+    "bent": "^7.3.12",
+    "prolly-trees": "^0.0.1",
+    "lodash": "^4.17.21"
+  },
+  "devDependencies": {
+    "mocha": "^10.0.0",
+    "rimraf": "3.0.2",
+    "standard": "^17.0.0"
+  },
+  "scripts": {
+    "clean": "rimraf package-lock.json node_modules",
+    "test": "mocha test/test-*.js",
+    "start": "node ./prolly-playground.js"
+  }
+}
